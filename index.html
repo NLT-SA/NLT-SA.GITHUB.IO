@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#173b2d">
+<title>Nettle Leaf Tea | شاي أوراق القراص</title>
+<meta name="description" content="اكتشف شاي أوراق القراص Nettle Leaf Tea. اختر الباقة المناسبة واطلب بسهولة.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Almarai:wght@400;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--green:#173b2d;--green2:#285b43;--cream:#f6f4ec;--gold:#c5a66a;--ink:#1d2922}
+*{box-sizing:border-box}body{margin:0;background:var(--cream);color:var(--ink);font-family:Almarai,Arial,sans-serif;line-height:1.8}
+header{background:var(--green);color:#fff;padding:14px 18px;text-align:center;font-size:13px}
+main{max-width:720px;margin:auto;padding:20px 16px 90px}
+.hero{background:#fff;border-radius:24px;overflow:hidden;box-shadow:0 12px 35px #142c1b12}
+.hero img{display:block;width:100%;height:auto;max-height:620px;object-fit:contain;background:#fff}
+.content{padding:22px;text-align:center}.eyebrow{color:var(--green2);font-weight:800;font-size:13px;letter-spacing:.4px}
+h1{font-size:clamp(25px,6vw,38px);line-height:1.45;margin:8px 0;color:var(--green)}
+.lead{margin:8px auto 18px;max-width:540px;color:#56645b}
+.pills{display:flex;justify-content:center;gap:8px;flex-wrap:wrap;margin:14px 0}.pill{background:#eef3ed;color:var(--green);border-radius:99px;padding:6px 12px;font-size:12px;font-weight:700}
+.btn{display:inline-block;background:var(--green);color:white;text-decoration:none;border:0;border-radius:14px;padding:14px 24px;font:800 16px Almarai;cursor:pointer;width:100%;max-width:420px}
+.section{margin-top:20px;background:#fff;border-radius:22px;padding:22px;box-shadow:0 8px 25px #142c1b0b}
+.section h2{margin:0 0 14px;color:var(--green);font-size:22px}
+.packages{display:grid;grid-template-columns:repeat(3,1fr);gap:9px}
+.package{border:1.5px solid #dce5dc;border-radius:16px;padding:12px 6px;text-align:center;background:#fff;cursor:pointer;color:var(--ink);font:inherit}
+.package.selected{border:2px solid var(--green);background:#f0f5ef}
+.package b{display:block;color:var(--green);font-size:22px}.package small{font-size:11px;color:#68766c}
+.note{font-size:12px;color:#68766c;margin:14px 0 0}
+label{display:block;font-size:13px;font-weight:700;margin:12px 0 5px}input,select{width:100%;padding:13px;border:1px solid #d7ded7;border-radius:12px;font:inherit;background:#fff}
+footer{text-align:center;color:#69756c;font-size:11px;padding:22px 10px}
+.sticky{position:fixed;bottom:0;left:0;right:0;padding:10px 14px calc(10px + env(safe-area-inset-bottom));background:#ffffffed;backdrop-filter:blur(10px);box-shadow:0 -5px 22px #10271814;text-align:center;z-index:5}
+@media(max-width:390px){.packages{gap:6px}.package{padding:10px 3px}.package b{font-size:19px}}
+</style></head>
+<body>
+<header>تسوّق بثقة • خيارات باقات متعددة</header>
+<main>
+<section class="hero">
+<img src="u34hf.jpeg" alt="عبوة Nettle Leaf Tea شاي أوراق القراص">
+<div class="content">
+<div class="eyebrow">NETTLE LEAF TEA</div>
+<h1>شاي أوراق القراص</h1>
+<p class="lead">استمتع بمشروب عشبي دافئ ضمن روتينك اليومي، مع أكياس شاي سهلة التحضير.</p>
+<div class="pills"><span class="pill">20 كيس شاي</span><span class="pill">1.5 غرام للكيس</span><span class="pill">سهل التحضير</span></div>
+<a class="btn" href="#order">اختر باقتك</a>
+</div></section>
+<section class="section" id="order">
+<h2>اختر الباقة المناسبة</h2>
+<div class="packages">
+<button class="package" type="button" data-n="1" data-price="198"><small>عبوة واحدة</small><b>198</b><small>ريال سعودي</small></button>
+<button class="package selected" type="button" data-n="2" data-price="249"><small>عبوتان</small><b>249</b><small>ريال سعودي</small></button>
+<button class="package" type="button" data-n="3" data-price="287"><small>3 عبوات</small><b>287</b><small>ريال سعودي</small></button>
+</div>
+<p class="note">السعر الإجمالي للباقة المختارة موضح أعلاه بالريال السعودي.</p>
+<form id="orderForm">
+<label for="name">الاسم الكامل</label><input id="name" name="name" autocomplete="name" required>
+<label for="phone">رقم الهاتف</label><input id="phone" name="phone" inputmode="tel" autocomplete="tel" required>
+<label for="city">المدينة</label><input id="city" name="city" autocomplete="address-level2" required>
+<button class="btn" type="submit" style="margin-top:18px">تأكيد اختيار الباقة</button>
+<p class="note" id="formNote" role="status">املأ بياناتك للمتابعة. سيتم تفعيل إرسال الطلب بعد ربط نظام استقبال الطلبات.</p>
+</form></section>
+<section class="section"><h2>معلومات مهمة</h2><p style="margin:0;color:#56645b">هذا المنتج شاي عشبي غذائي. لا يُقدَّم هنا كعلاج أو بديل عن استشارة الطبيب، ولا نَعِد بنتائج صحية أو علاجية.</p></section>
+<footer>© Nettle Leaf Tea</footer>
+</main>
+<div class="sticky"><a class="btn" href="#order">اطلب الآن</a></div>
+<script>
+const packages=[...document.querySelectorAll('.package')];let chosen={n:2,price:249};
+packages.forEach(b=>b.addEventListener('click',()=>{packages.forEach(x=>x.classList.remove('selected'));b.classList.add('selected');chosen={n:Number(b.dataset.n),price:Number(b.dataset.price)}}));
+document.getElementById('orderForm').addEventListener('submit',e=>{e.preventDefault();document.getElementById('formNote').textContent='تم إدخال بياناتك واختيار الباقة. لم يتم إرسال الطلب بعد لأن نظام استقبال الطلبات لم يُربط بعد.';});
+</script>
+</body></html>
